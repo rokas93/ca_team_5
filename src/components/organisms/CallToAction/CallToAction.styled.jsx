@@ -3,7 +3,7 @@ import ctaBgOne from '../../../assets/images/cta-bg-1.jpg';
 import ctaBgTwo from '../../../assets/images/cta-bg-2.jpg';
 import BREAKPOINTS from '../../../shared/constants/breakpoints';
 
-export const StyledCallToAction = styled.div`
+export const StyledCallToAction = styled.section`
   position: relative;
 `;
 
@@ -19,7 +19,7 @@ export const StyledCallToActionContainer = styled.div`
   /* CTA container */
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    padding: 0 15px;
+    padding: 0 40px;
   }
 `;
 
@@ -78,18 +78,20 @@ export const StyledCallToActionBorder = styled.div`
 export const StyledCallToActionHeading = styled.h3`
   color: #fff;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 47px;
+  font-size: 28px;
+  line-height: 46px;
   letter-spacing: -0.03em;
   text-align: center;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
+    font-size: 38px;
+    line-height: 56px;
     text-align: left;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.xl}) {
     font-size: 48px;
-    line-height: 67px;
+    line-height: 66px;
   }
 `;
 

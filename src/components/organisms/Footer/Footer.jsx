@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   FacebookIcon,
   InstagramIcon,
@@ -9,7 +10,9 @@ import {
 import {
   StyledFooter,
   StyledFooterTopDiv,
+  StyledFooterTopContainerDiv,
   StyledFooterBottomDiv,
+  StyledFooterBottomContainerDiv,
 } from './Footer.style';
 import Navigation from '../../atoms/Navigation';
 import TEXTS from '../../../shared/texts/texts';
@@ -20,38 +23,52 @@ const Footer = () => {
   return (
     <StyledFooter>
       <StyledFooterTopDiv>
-        <div className="footer-heading-iconsBox-wrapper">
-          <h3 className="footer-heading">{TEXTS.footer.heading}</h3>
-          <div className="iconsBox">
-            <FacebookIcon />
-            <TwitterIcon />
-            <InstagramIcon />
-            <LinkedinIcon />
+        <StyledFooterTopContainerDiv>
+          <div className='footer-top__left'>
+            <h3 className='footer-heading'>{TEXTS.footer.heading}</h3>
+            <div className='iconsBox'>
+              <a href='https://www.facebook.com/'>
+                <FacebookIcon />
+              </a>
+              <a href='https://twitter.com/'>
+                <TwitterIcon />
+              </a>
+              <a href='https://www.instagram.com/'>
+                <InstagramIcon />
+              </a>
+              <a href='https://www.linkedin.com/'>
+                <LinkedinIcon />
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="footer-contact-wrapper">
-          <div className="contact-box">
-            <p>{TEXTS.footer.titles.help}</p>
-            <p>{TEXTS.header.phone}</p>
+          <div className='footer-top__right'>
+            <div className='contact-box'>
+              <p>{TEXTS.footer.titles.help}</p>
+              <p>{TEXTS.header.phone}</p>
+            </div>
+            <div className='contact-box'>
+              <p>{TEXTS.footer.titles.address}</p>
+              <p>{TEXTS.footer.address}</p>
+            </div>
+            <div className='contact-box'>
+              <p>{TEXTS.footer.titles.open}</p>
+              <p>{TEXTS.footer.openhours}</p>
+            </div>
           </div>
-          <div className="contact-box">
-            <p>{TEXTS.footer.titles.address}</p>
-            <p>{TEXTS.footer.address}</p>
-          </div>
-          <div className="contact-box">
-            <p>{TEXTS.footer.titles.open}</p>
-            <p>{TEXTS.footer.openhours}</p>
-          </div>
-        </div>
+        </StyledFooterTopContainerDiv>
       </StyledFooterTopDiv>
       <StyledFooterBottomDiv>
-        <div>
-          <LogoIcon />
-        </div>
-        <div className="navigation-box">
-          <Navigation />
-        </div>
-        <div className="copyright">&copy; Copyright Finsweet {currentYear}</div>
+        <StyledFooterBottomContainerDiv>
+          <Link to='/'>
+            <LogoIcon />
+          </Link>
+          <div className='navigation-box'>
+            <Navigation />
+          </div>
+          <div className='copyright'>
+            &copy; {TEXTS.footer.cop} {currentYear}
+          </div>
+        </StyledFooterBottomContainerDiv>
       </StyledFooterBottomDiv>
     </StyledFooter>
   );

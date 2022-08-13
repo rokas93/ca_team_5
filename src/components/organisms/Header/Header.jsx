@@ -12,34 +12,37 @@ import {
 import { LogoIcon, NavIcon, PhoneIcon } from '../../../assets/icons';
 import { Link } from 'react-router-dom';
 import TEXTS from '../../../shared/texts/texts';
+import StyledContainer from '../../../assets/styles/StyledContainer';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <StyleHeader>
-      <Link to={'/'}>
-        <LogoIcon />
-      </Link>
+    <StyledContainer>
+      <StyleHeader>
+        <Link to={'/'}>
+          <LogoIcon />
+        </Link>
 
-      <StyleHeaderNavButtonWrapper onClick={() => setIsNavOpen(!isNavOpen)}>
-        <NavIcon />
-      </StyleHeaderNavButtonWrapper>
+        <StyleHeaderNavButtonWrapper onClick={() => setIsNavOpen(!isNavOpen)}>
+          <NavIcon />
+        </StyleHeaderNavButtonWrapper>
 
-      <StyleHeaderNavWrapper isNavOpen={isNavOpen}>
-        <Navigation />
-        <StyleHeaderSeparator></StyleHeaderSeparator>
-        <StyleHeaderContactsWrapper href={`tel:${TEXTS.header.phone}`}>
-          <StyleHeaderContactsIconWrapper>
-            <PhoneIcon />
-          </StyleHeaderContactsIconWrapper>
-          <StyleHeaderContactsTextWrapper>
-            <p>{TEXTS.header.service}</p>
-            <p>{TEXTS.header.phone}</p>
-          </StyleHeaderContactsTextWrapper>
-        </StyleHeaderContactsWrapper>
-      </StyleHeaderNavWrapper>
-    </StyleHeader>
+        <StyleHeaderNavWrapper isNavOpen={isNavOpen}>
+          <Navigation />
+          <StyleHeaderSeparator></StyleHeaderSeparator>
+          <StyleHeaderContactsWrapper href={`tel:${TEXTS.header.phone}`}>
+            <StyleHeaderContactsIconWrapper>
+              <PhoneIcon />
+            </StyleHeaderContactsIconWrapper>
+            <StyleHeaderContactsTextWrapper>
+              <p>{TEXTS.header.service}</p>
+              <p>{TEXTS.header.phone}</p>
+            </StyleHeaderContactsTextWrapper>
+          </StyleHeaderContactsWrapper>
+        </StyleHeaderNavWrapper>
+      </StyleHeader>
+    </StyledContainer>
   );
 };
 

@@ -5,13 +5,12 @@ export const StyleHeader = styled.header`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 32px;
 
-  padding: 18px 30px;
+  padding: 18px 0;
 
   /* Nav container */
-  max-width: 1280px;
-  margin: 0 auto;
+  /* max-width: 1280px;
+  margin: 0 auto; */
   /* Nav container */
 
   & svg {
@@ -25,7 +24,6 @@ export const StyleHeader = styled.header`
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     justify-content: space-between;
-    padding: 18px 15px;
   }
 `;
 
@@ -47,7 +45,7 @@ export const StyleHeaderNavWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 
   width: 100%;
 

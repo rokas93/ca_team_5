@@ -6,9 +6,9 @@ import {
   StyledCallToActionBorder,
   StyledCallToActionContainer,
   StyledCallToActionHeading,
-  TestButton,
 } from './CallToAction.styled';
 import TEXTS from '../../../shared/texts/texts';
+import Button from '../../atoms/Button';
 
 const CallToAction = () => {
   return (
@@ -20,7 +20,7 @@ const CallToAction = () => {
           <StyledCallToActionHeading>
             {TEXTS.cta.heading}
           </StyledCallToActionHeading>
-          <TestButton>Placeholder</TestButton>
+          <Button text={TEXTS.button.contact} bg='black' />
         </StyledCallToActionBorder>
       </StyledCallToActionContainer>
     </StyledCallToAction>

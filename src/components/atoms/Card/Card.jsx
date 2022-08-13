@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleCard, StyleCardText } from './Card.styled';
 
-const Card = ({ service }) => {
+const Card = (props) => {
   return (
     <StyleCard>
-      {service.logo}
-      <StyleCardText>{service.text}</StyleCardText>
+      {props.logo}
+      <StyleCardText>{props.text}</StyleCardText>
     </StyleCard>
   );
 };
