@@ -14,29 +14,12 @@ export const StyledExperienceCard = styled.div`
 `;
 
 export const StyledExperienceCardTitle = styled.h2`
-  color: #661ce7;
-  font-weight: 800;
-  font-size: 38px;
-  line-height: 56px;
-
-  letter-spacing: -0.03em;
-
-  @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 58px;
-    line-height: 76px;
-  }
+  ${({ theme }) => theme.h2};
+  color: ${({ theme }) => theme.color.purple};
 `;
 
 export const StyledExperienceCardDesc = styled.p`
-  color: #1e1b1b;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-
+  ${({ theme }) => theme.title2};
+  color: ${({ theme }) => theme.color.black};
   opacity: 0.7;
-
-  @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 24px;
-    line-height: 36px;
-  }
 `;

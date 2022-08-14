@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledButton = styled.button`
   font-size: 18px;
   font-weight: 600;
-  color: #fff;
+  color: ${({ theme }) => theme.color.white};
 
   border: none;
   border-radius: 12px;

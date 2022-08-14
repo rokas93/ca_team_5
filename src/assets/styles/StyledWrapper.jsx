@@ -15,6 +15,9 @@ const StyledWrapper = styled.section`
       case 'lighter':
         return 'background-color: #F2F2F2;';
 
+      case 'grey':
+        return 'background-color: #F5F5F5;';
+
       default:
         return 'background-color: #fff;';
     }

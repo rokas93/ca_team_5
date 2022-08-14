@@ -38,8 +38,5 @@ export const StyleCard = styled.div`
 `;
 
 export const StyleCardText = styled.span`
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: -0.03em;
+  ${({ theme }) => theme.title2};
 `;

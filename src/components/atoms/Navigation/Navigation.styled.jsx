@@ -28,10 +28,8 @@ export const StyleNavigationList = styled.ul`
   }
 
   & a {
-    color: #1e1b1b;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
+    ${({ theme }) => theme.body2};
+    color: ${({ theme }) => theme.color.black};
 
     transition: 0.5s;
 

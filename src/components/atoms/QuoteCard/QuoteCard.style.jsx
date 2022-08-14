@@ -21,7 +21,7 @@ export const StyledQuoteCardCircle = styled.div`
   align-items: center;
   justify-content: center;
 
-  background-color: #661ce7;
+  background-color: ${({ theme }) => theme.color.purple};
 
   border-radius: 50%;
 
@@ -77,35 +77,18 @@ export const StyledQuoteCardLine = styled.span`
 `;
 
 export const StyledQuoteTitle = styled.p`
+  ${({ theme }) => theme.title1};
+  color: ${({ theme }) => theme.color.black};
+
   grid-column: 2;
   align-self: center;
-
-  color: #1e1b1b;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
-  letter-spacing: -0.03em;
-
-  @media screen and (min-width: ${BREAKPOINTS.sm}) {
-    font-size: 26px;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 32px;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.xl}) {
-    line-height: 48px;
-  }
 `;
 
 export const StyledQuoteDesc = styled.span`
-  grid-column: 2;
-
-  color: #1e1b1b;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 175%;
+  ${({ theme }) => theme.body1};
+  color: ${({ theme }) => theme.color.black};
 
   opacity: 0.6;
+
+  grid-column: 2;
 `;

@@ -3,46 +3,44 @@ import BREAKPOINTS from '../../../shared/constants/breakpoints';
 
 // Footer
 export const StyledFooter = styled.footer`
-  color: #fff;
+  color: ${({ theme }) => theme.color.white};
 `;
 
 // Footer top wrapper
 export const StyledFooterTopDiv = styled.div`
   width: 100%;
 
-  background: #1e1b1b;
+  background: ${({ theme }) => theme.color.black};
   opacity: 98%;
 `;
 
 // Footer top container
 export const StyledFooterTopContainerDiv = styled.div`
   // Mobile
-  max-width: 1280px;
-  margin: 0 auto;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
-  padding: 70px 30px;
+  padding: 70px 0px;
 
   gap: 40px;
 
   .footer-top__left {
     width: 100%;
-  }
-  .footer-top__left .footer-heading {
-    font-size: 28px;
-    margin-bottom: 35px;
-  }
-  .footer-top__left .iconsBox {
-    display: flex;
-    align-items: center;
-  }
 
-  .footer-top__left .iconsBox svg {
-    margin-right: 15px;
-    color: #fff;
+    .footer-heading {
+      ${({ theme }) => theme.h3};
+      margin-bottom: 35px;
+    }
+    .iconsBox {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 15px;
+        color: ${({ theme }) => theme.color.white};
+      }
+    }
   }
 
   .footer-top__right {
@@ -54,13 +52,14 @@ export const StyledFooterTopContainerDiv = styled.div`
 
   .contact-box {
     p:nth-child(1) {
-      color: Grey;
+      ${({ theme }) => theme.body1};
+      color: ${({ theme }) => theme.color.darkGrey};
+
       margin-bottom: 8px;
-      font-size: 18px;
     }
 
     p:nth-child(2) {
-      font-size: 20px;
+      ${({ theme }) => theme.title2};
     }
   }
 
@@ -70,24 +69,13 @@ export const StyledFooterTopContainerDiv = styled.div`
     align-items: start;
     justify-content: flex-start;
 
-    padding-left: 15px;
-
     .footer-top__left {
       width: calc(50% - 40px);
-    }
-    .footer-top__left .footer-heading {
-      font-size: 38px;
     }
 
     .footer-top__right {
       width: calc(50% - 40px);
       gap: 32px;
-    }
-
-    .contact-box {
-      p:nth-child(2) {
-        font-size: 24px;
-      }
     }
   }
 
@@ -95,37 +83,30 @@ export const StyledFooterTopContainerDiv = styled.div`
   @media (min-width: ${BREAKPOINTS.lg}) {
     padding-top: 128px;
     padding-bottom: 128px;
-    .footer-top__left .footer-heading {
-      font-size: 48px;
-      margin-bottom: 64px;
-    }
   }
 `;
 
 // Footer bottom wrapper
 export const StyledFooterBottomDiv = styled.div`
   width: 100%;
-  background: #1e1b1b;
+  background: ${({ theme }) => theme.color.black};
 `;
 
 // Footer bottom container
 export const StyledFooterBottomContainerDiv = styled.div`
   // Mobile
-  max-width: 1280px;
-  margin: 0 auto;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
   padding: 50px 0px;
-  gap: 10px;
+  gap: 20px;
 
-  background: #1e1b1b;
+  background: ${({ theme }) => theme.color.black};
 
   & a svg {
-    color: #fff;
+    color: ${({ theme }) => theme.color.white};
   }
 
   .navigation-box {
@@ -136,26 +117,22 @@ export const StyledFooterBottomContainerDiv = styled.div`
     }
 
     & nav ul li a {
-      color: #fff;
+      color: ${({ theme }) => theme.color.white};
     }
   }
 
   .copyright {
-    color: Grey;
+    ${({ theme }) => theme.caption};
+    color: ${({ theme }) => theme.color.darkGrey};
     font-weight: 600;
-    font-size: 14px;
+
     margin-top: 50px;
   }
 
   // Tablet
   @media (min-width: ${BREAKPOINTS.md}) {
-    padding-left: 15px;
-    padding-right: 15px;
-    gap: 0px;
-
     .copyright {
-      font-size: 16px;
-      margin-top: 0px;
+      margin-top: 0;
     }
   }
 

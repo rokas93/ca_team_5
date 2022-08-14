@@ -16,13 +16,11 @@ export const StyledForm = styled.form`
 `;
 
 export const StyledInput = styled.input`
+  ${({ theme }) => theme.body2};
+
   width: 100%;
 
   padding: 23px 40px;
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 28px;
 
   outline: none;
   border: none;
@@ -30,11 +28,8 @@ export const StyledInput = styled.input`
   border-radius: 2px;
 
   &::placeholder {
-    color: #1e1b1b;
-
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
+    ${({ theme }) => theme.body2};
+    color: ${({ theme }) => theme.color.black};
 
     opacity: 0.5;
   }

@@ -19,8 +19,20 @@ export const HOME_PAGE_QUOTES = [
   },
 ];
 
-export const ABOUTUS_PAGE_QUOTES = [
-  { id: uid(), title: ``, desc: `` },
-  { id: uid(), title: ``, desc: `` },
-  { id: uid(), title: ``, desc: `` },
+export const ABOUT_PAGE_QUOTES = [
+  {
+    id: uid(),
+    title: `${TEXTS.homePage.process.firstProcess.title}`,
+    desc: `${TEXTS.aboutPage.steps.quotes.firstDesc}`,
+  },
+  {
+    id: uid(),
+    title: `${TEXTS.homePage.process.secondProcess.title}`,
+    desc: `${TEXTS.aboutPage.steps.quotes.secondDesc}`,
+  },
+  {
+    id: uid(),
+    title: `${TEXTS.homePage.process.thirdProcess.title}`,
+    desc: `${TEXTS.aboutPage.steps.quotes.thirdDesc}`,
+  },
 ];

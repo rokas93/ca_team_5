@@ -9,11 +9,8 @@ export const StyledArrowButton = styled.div`
     cursor: pointer;
 
     & span {
-      color: #1e1b1b;
-
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 32px;
+      ${({ theme }) => theme.body1};
+      color: ${({ theme }) => theme.color.black};
 
       transition: 0.3s;
     }

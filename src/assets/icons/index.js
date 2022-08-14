@@ -439,8 +439,8 @@ export const PlusIcon = (props) => {
         x2='16.9216'
         y2='8'
         stroke='white'
-        stroke-width='2'
-        stroke-linecap='round'
+        strokeWidth='2'
+        strokeLinecap='round'
       />
       <line
         x1='9.47266'
@@ -448,14 +448,31 @@ export const PlusIcon = (props) => {
         x2='9.47266'
         y2='1'
         stroke='white'
-        stroke-width='2'
-        stroke-linecap='round'
-        transform={props.isActive && 'rotate(90)'}
+        strokeWidth='2'
+        strokeLinecap='round'
+        transform={props.active && 'rotate(90)'}
         transform-origin='50% 50%'
       />
     </svg>
   );
 };
 
-// x1 = 9.47266 + 14 / 2
-// x2 = 9.47266 + 0 / 2
+export const CheckIcon = (props) => {
+  return (
+    <svg
+      width='29'
+      height='23'
+      viewBox='0 0 29 23'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      {...props}
+    >
+      <path
+        d='M2 12.5L9 19.5L26.5 2'
+        stroke='currentColor'
+        stroke-width='4'
+        stroke-linecap='round'
+      />
+    </svg>
+  );
+};

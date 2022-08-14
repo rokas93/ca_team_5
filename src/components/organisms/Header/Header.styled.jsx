@@ -8,14 +8,9 @@ export const StyleHeader = styled.header`
 
   padding: 18px 0;
 
-  /* Nav container */
-  /* max-width: 1280px;
-  margin: 0 auto; */
-  /* Nav container */
-
   & svg {
     display: block;
-    color: #1e1b1b;
+    color: ${({ theme }) => theme.color.black};
   }
 
   & a {
@@ -66,7 +61,7 @@ export const StyleHeaderContactsWrapper = styled.a`
   align-items: center;
   gap: 14px;
 
-  color: #000;
+  color: ${({ theme }) => theme.color.darkBlack};
 `;
 
 export const StyleHeaderContactsIconWrapper = styled.div`
@@ -74,7 +69,7 @@ export const StyleHeaderContactsIconWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-color: #61c3a1;
+  background-color: ${({ theme }) => theme.color.darkGreen};
 
   border-radius: 50%;
 
@@ -82,7 +77,7 @@ export const StyleHeaderContactsIconWrapper = styled.div`
   height: 40px;
 
   & svg {
-    color: #fff;
+    color: ${({ theme }) => theme.color.white};
   }
 `;
 
@@ -92,15 +87,13 @@ export const StyleHeaderContactsTextWrapper = styled.div`
   gap: 5px;
 
   & p:first-of-type {
-    font-weight: 500;
-    font-size: 16px;
-
+    ${({ theme }) => theme.caption};
     opacity: 0.7;
   }
 
   & p:last-of-type {
-    font-weight: 600;
-    font-size: 18px;
+    ${({ theme }) => theme.body1};
+    line-height: 1;
   }
 `;
 

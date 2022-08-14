@@ -5,19 +5,28 @@ import './App.css';
 import Header from './components/organisms/Header/Header';
 import Footer from './components/organisms/Footer';
 
+import { ThemeProvider } from 'styled-components';
+import { theme } from './assets/styles/StyledGuide';
+
 const App = () => {
   return (
-    <BrowserRouter>
-      <Header />
-      <Suspense>
-        <Routes>
-          {ROUTES.map((route) => (
-            <Route key={route.path} path={route.path} element={route.element} />
-          ))}
-        </Routes>
-      </Suspense>
-      <Footer />
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Header />
+        <Suspense>
+          <Routes>
+            {ROUTES.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                element={route.element}
+              />
+            ))}
+          </Routes>
+        </Suspense>
+        <Footer />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 

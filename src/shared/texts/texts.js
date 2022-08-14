@@ -187,10 +187,55 @@ const TEXTS = {
       },
     },
     features: {
+      title: 'Services we provide to our valued customers',
       desc: 'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
     },
+    highlights: {
+      titles: {
+        firstTitle:
+          'Serve our customers and always deliver the customer service',
+        secondTitle: `To be the world’s most eader in automotive business solutions.`,
+        thirdTitle:
+          'We value the service we provide and our loyal returning customers',
+      },
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes ',
+    },
+    steps: {
+      title: 'We Provide Expert Service and aim to have a long term with you',
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter',
+      quotes: {
+        firstDesc:
+          'Through True Rich Attended does no end it his mother since real had half every',
+        secondDesc:
+          'Through True Rich Attended does no end it his mother since real',
+        thirdDesc:
+          'Ecstatic unsatiable saw his giving Remain expense you position concluded.',
+      },
+    },
+    aboutDesc:
+      'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does',
   },
-
+  servicesPage: {
+    services: {
+      title: 'Auto Diagnostics',
+      desc: 'Through True Rich Attended does no end it his mother since favourable real had half every him case in packages enquire we up ecstatic. Through True Rich Attended does no end it his mother. ',
+      buttonText: 'See service details',
+    },
+    howWorks: {
+      heading: 'Our services',
+      heading1: 'How we work and the process we follow',
+      heading2: 'Diagnose Car Problems If You Don`t Know Much About Cars',
+      desc: 'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does',
+      text: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes everything from struts, shocks, and tie rod ends to ball joints, springs everything from struts, shocks, and tie rod ends to ball joints, springs',
+      buttonText: 'Book a service',
+      list: {
+        text1: 'Through True Rich Attended does no end it his mother since',
+        text2: 'Attended does no end it his mother since real had half every',
+        text3:
+          'Since real had half every him case in packages enquire we up ecstatic',
+      },
+    },
+  },
   button: {
     contact: 'Contact Us',
     service: 'Book a service',

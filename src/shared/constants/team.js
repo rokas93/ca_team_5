@@ -11,37 +11,37 @@ export const MEMBERS = [
   {
     id: uid(),
     title: `${TEXTS.aboutPage.members.nr1.name}`,
-    desc: `${TEXTS.aboutPage.members.nr1.process}`,
+    desc: `${TEXTS.aboutPage.members.nr1.position}`,
     image: `${member1}`,
   },
   {
     id: uid(),
     title: `${TEXTS.aboutPage.members.nr2.name}`,
-    desc: `${TEXTS.aboutPage.members.nr2.process}`,
+    desc: `${TEXTS.aboutPage.members.nr2.position}`,
     image: `${member2}`,
   },
   {
     id: uid(),
     title: `${TEXTS.aboutPage.members.nr3.name}`,
-    desc: `${TEXTS.aboutPage.members.nr3.process}`,
+    desc: `${TEXTS.aboutPage.members.nr3.position}`,
     image: `${member3}`,
   },
   {
     id: uid(),
     title: `${TEXTS.aboutPage.members.nr4.name}`,
-    desc: `${TEXTS.aboutPage.members.nr4.process}`,
+    desc: `${TEXTS.aboutPage.members.nr4.position}`,
     image: `${member4}`,
   },
   {
     id: uid(),
     title: `${TEXTS.aboutPage.members.nr5.name}`,
-    desc: `${TEXTS.aboutPage.members.nr5.process}`,
+    desc: `${TEXTS.aboutPage.members.nr5.position}`,
     image: `${member5}`,
   },
   {
     id: uid(),
     title: `${TEXTS.aboutPage.members.nr6.name}`,
-    desc: `${TEXTS.aboutPage.members.nr6.process}`,
+    desc: `${TEXTS.aboutPage.members.nr6.position}`,
     image: `${member6}`,
   },
 ];

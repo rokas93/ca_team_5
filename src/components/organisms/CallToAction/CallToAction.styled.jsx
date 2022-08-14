@@ -13,7 +13,7 @@ export const StyledCallToActionContainer = styled.div`
   align-items: flex-start;
 
   /* CTA container */
-  max-width: 1280px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0;
   /* CTA container */
@@ -63,7 +63,7 @@ export const StyledCallToActionBorder = styled.div`
 
   padding: 68px 40px;
 
-  background-color: #ff6433;
+  background-color: ${({ theme }) => theme.color.orange};
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     align-items: flex-start;
@@ -76,34 +76,12 @@ export const StyledCallToActionBorder = styled.div`
 `;
 
 export const StyledCallToActionHeading = styled.h3`
-  color: #fff;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 46px;
-  letter-spacing: -0.03em;
+  ${({ theme }) => theme.h3};
+  color: ${({ theme }) => theme.color.white};
+
   text-align: center;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 38px;
-    line-height: 56px;
     text-align: left;
   }
-
-  @media screen and (min-width: ${BREAKPOINTS.xl}) {
-    font-size: 48px;
-    line-height: 66px;
-  }
-`;
-
-export const TestButton = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 177px;
-  height: 64px;
-
-  color: #fff;
-
-  background-color: #000;
 `;
