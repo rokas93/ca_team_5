@@ -1,25 +1,39 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../shared/constants/breakpoints';
 
 export const StyleCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
 
-  width: auto;
-  height: 232px;
+  width: 100%;
+  height: 132px;
 
   background-color: #fff;
 
-  transition: 0.5s;
+  transition: background-color 0.5s;
 
   & svg {
-    transition: 0.5s;
+    width: 23px;
+    height: auto;
+
+    @media screen and (min-width: ${BREAKPOINTS.md}) {
+      width: auto;
+    }
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    height: 232px;
+    gap: 12px;
+  }
+
+  & svg {
+    transition: color 0.5s;
   }
 
   & span {
-    transition: 0.5s;
+    transition: color 0.5s;
   }
 
   &:hover {

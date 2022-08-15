@@ -27,7 +27,6 @@ export const StyledAbilities = styled.div`
 `;
 
 export const StyledAbilitiesHeading = styled.h2`
-
   ${({ theme }) => theme.h2};
 
   color: ${({ theme }) => theme.color.black};
@@ -51,15 +50,11 @@ export const StyledAbilitiesSubHeading = styled.p`
 
 export const StyledAbilitiesWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: calc(2, auto);
   grid-gap: 8px;
 
   width: 100%;
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
     grid-template-columns: repeat(4, 1fr);

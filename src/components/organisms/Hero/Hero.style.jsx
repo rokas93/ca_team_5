@@ -7,47 +7,50 @@ export const StyledHero = styled.div`
 
 export const StyledHeroDiv = styled.div`
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 
   position: relative;
-  overflow: hidden;
 `;
 
+export const StyledImg = styled.div`
+  background-image: url(${(props) => props.image});
+
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+
+  width: 66%;
+  height: 100%;
+
+  z-index: 1;
+`;
 export const StyledDescDiv = styled.div`
   background: ${({ theme }) => theme.color.black};
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 48px;
 
-  position: absolute;
-  text-align: center;
+  padding: 56px;
 
-  height: 100%;
-
-  padding: 48px;
-  opacity: 96%;
+  z-index: 2;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    align-items: start;
-    text-align: left;
-
-    position: absolute;
-    left: 36%;
-
-    opacity: 100%;
+    padding: 96px 96px 146px 96px;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    left: 46%;
-    padding: 96px;
+    align-items: flex-start;
+    width: 60%;
   }
 `;
 
 export const StyledText = styled.div`
   color: ${({ theme }) => theme.color.lightGrey};
-
-  margin-bottom: 48px;
+  text-align: center;
 
   h1 {
     ${({ theme }) => theme.h1};
@@ -57,5 +60,9 @@ export const StyledText = styled.div`
 
   p {
     ${({ theme }) => theme.body1};
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    text-align: start;
   }
 `;

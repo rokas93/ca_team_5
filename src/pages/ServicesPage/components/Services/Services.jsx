@@ -25,7 +25,12 @@ const Services = () => {
         <ArrowButton path={'/'} text={TEXTS.servicesPage.services.buttonText} />
       </StyledServicesHighlighted>
       {SERVICES.slice(0, 6).map((service) => (
-        <Card key={service.id} text={service.text} logo={service.logo} />
+        <Card
+          key={service.id}
+          text={service.text}
+          logo={service.logo}
+          id={service.id}
+        />
       ))}
     </StyledServices>
   );

@@ -470,8 +470,8 @@ export const CheckIcon = (props) => {
       <path
         d='M2 12.5L9 19.5L26.5 2'
         stroke='currentColor'
-        stroke-width='4'
-        stroke-linecap='round'
+        strokeWidth='4'
+        strokeLinecap='round'
       />
     </svg>
   );

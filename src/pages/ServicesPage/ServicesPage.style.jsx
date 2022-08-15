@@ -1,3 +1,3 @@
 import styled from 'styled-components';
 
-export const SetyledServicesPage = styled.div``;
+export const SetyledServicesPage = styled.main``;

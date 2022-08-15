@@ -5,6 +5,7 @@ import TEXTS from '../../../shared/texts/texts';
 import {
   StyledHero,
   StyledHeroDiv,
+  StyledImg,
   StyledDescDiv,
   StyledText,
 } from './Hero.style';
@@ -13,7 +14,7 @@ const Hero = ({ image, title, desc }) => {
   return (
     <StyledHero>
       <StyledHeroDiv>
-        <img src={image} alt='' />
+        <StyledImg image={image}></StyledImg>
         <StyledDescDiv>
           <StyledText>
             <h1>{title}</h1>

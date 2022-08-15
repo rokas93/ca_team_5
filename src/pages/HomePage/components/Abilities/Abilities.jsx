@@ -23,7 +23,12 @@ const Abilities = () => {
         </StyledAbilitiesHeading>
         <StyledAbilitiesWrapper>
           {SERVICES.slice(0, 8).map((service) => (
-            <Card key={service.id} logo={service.logo} text={service.text} />
+            <Card
+              key={service.id}
+              logo={service.logo}
+              text={service.text}
+              id={service.id}
+            />
           ))}
         </StyledAbilitiesWrapper>
         <ArrowButton path={'/'} text={TEXTS.homePage.abilities.buttonText} />

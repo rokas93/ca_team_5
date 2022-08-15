@@ -9,7 +9,8 @@ import Highlights from './components/Highlights';
 import Steps from './components/Steps/Steps';
 import Hero from '../../components/organisms/Hero';
 
-import aboutImage from '../../assets/images/about-img.jpg';
+import heroImage from '../../assets/images/hero-about-img.jpg';
+
 import TEXTS from '../../shared/texts/texts';
 
 const AboutPage = () => {
@@ -18,7 +19,7 @@ const AboutPage = () => {
       <StyledWrapper>
         <StyledContainer>
           <Hero
-            image={aboutImage}
+            image={heroImage}
             title={TEXTS.navigation.aboutus}
             desc={TEXTS.aboutPage.aboutDesc}
           />
