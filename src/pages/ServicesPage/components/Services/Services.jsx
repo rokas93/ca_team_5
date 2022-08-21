@@ -1,35 +1,38 @@
-import React from 'react';
 import {
   StyledServices,
   StyledServicesDesc,
   StyledServicesHeading,
   StyledServicesHighlighted,
 } from './Services.style';
-import serviceBg from '../../../../assets/images/service-bg.jpg';
 import TEXTS from '../../../../shared/texts/texts';
 import ArrowButton from '../../../../components/atoms/ArrowButton';
-import SERVICES from '../../../../shared/constants/services';
+import SERVICES from '../../../../data/services';
 import Card from '../../../../components/atoms/Card';
+import shortenText from '../../../../shared/func/shortenText';
+import shuffleArray from '../../../../shared/func/shuffleArray';
 
 const Services = () => {
+  const services = shuffleArray(SERVICES);
+
   return (
     <StyledServices>
       <StyledServicesHighlighted>
-        <img src={serviceBg} alt='serviceBg.jpg' />
-        <StyledServicesHeading>
-          {TEXTS.servicesPage.services.title}
-        </StyledServicesHeading>
+        <img src={services[0].img.image} alt={services[0].img.alt} />
+        <StyledServicesHeading>{services[0].text}</StyledServicesHeading>
         <StyledServicesDesc>
-          {TEXTS.servicesPage.services.desc}
+          {shortenText(services[0].paragraph1, 30)}
         </StyledServicesDesc>
-        <ArrowButton path={'/'} text={TEXTS.servicesPage.services.buttonText} />
+        <ArrowButton
+          path={`/services/${services[0].slug}`}
+          text={TEXTS.servicesPage.services.buttonText}
+        />
       </StyledServicesHighlighted>
-      {SERVICES.slice(0, 6).map((service) => (
+      {services.slice(0, 6).map((service) => (
         <Card
           key={service.id}
           text={service.text}
           logo={service.logo}
-          id={service.id}
+          slug={service.slug}
         />
       ))}
     </StyledServices>

@@ -12,6 +12,8 @@ export const StyledFaq = styled.div`
 
   margin: 0 auto;
 
+  user-select: none;
+
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 100px 0;
     width: 85%;

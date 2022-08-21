@@ -42,7 +42,7 @@ export const StyledBrandsWrapper = styled.div`
 
     &:hover {
       opacity: 1;
-      transform: scale(1.2);
+      transform: scale(1.2) !important;
     }
   }
 

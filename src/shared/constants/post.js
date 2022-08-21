@@ -1,0 +1,96 @@
+import TEXTS from '../texts/texts';
+import heroImg from '../../assets/images/sngl-blog-hero.jpg';
+import postImg from '../../assets/images/sngl-blog-img.jpg';
+import heroImg2 from '../../assets/images/service-diagnostic.jpg';
+import postImg2 from '../../assets/images/post-2.jpg';
+import heroImg3 from '../../assets/images/blog-hero-img.jpg';
+import postImg3 from '../../assets/images/post-3.jpg';
+
+const POST = [
+  {
+    id: 1,
+    date: `${TEXTS.SingleBlogPage.date}`,
+    firstTitle: `${TEXTS.SingleBlogPage.firstTitle}`,
+    desc1: `${TEXTS.SingleBlogPage.desc1}`,
+    heroImage: `${heroImg}`,
+    secondTitle: `${TEXTS.SingleBlogPage.secondTitle}`,
+    desc2: `${TEXTS.SingleBlogPage.desc2}`,
+    postImg: `${postImg}`,
+    thirdTitle: `${TEXTS.SingleBlogPage.thirdTitle}`,
+    desc3: `${TEXTS.SingleBlogPage.desc3}`,
+    desc4: `${TEXTS.SingleBlogPage.desc4}`,
+    desc5: `${TEXTS.SingleBlogPage.desc5}`,
+  },
+  {
+    id: 2,
+    date: `${TEXTS.SingleBlogPage.date}`,
+    firstTitle: `${TEXTS.blogPage.posts.firstTitle}`,
+    desc1: `${TEXTS.SingleBlogPage.desc1}`,
+    heroImage: `${heroImg3}`,
+    secondTitle: `${TEXTS.SingleBlogPage.secondTitle}`,
+    desc2: `${TEXTS.SingleBlogPage.desc2}`,
+    postImg: `${postImg2}`,
+    thirdTitle: `${TEXTS.SingleBlogPage.thirdTitle}`,
+    desc3: `${TEXTS.SingleBlogPage.desc3}`,
+    desc4: `${TEXTS.SingleBlogPage.desc4}`,
+    desc5: `${TEXTS.SingleBlogPage.desc5}`,
+  },
+  {
+    id: 3,
+    date: `${TEXTS.SingleBlogPage.date}`,
+    firstTitle: `${TEXTS.SingleBlogPage.firstTitle}`,
+    desc1: `${TEXTS.SingleBlogPage.desc1}`,
+    heroImage: `${heroImg2}`,
+    secondTitle: `${TEXTS.SingleBlogPage.secondTitle}`,
+    desc2: `${TEXTS.SingleBlogPage.desc2}`,
+    postImg: `${postImg3}`,
+    thirdTitle: `${TEXTS.SingleBlogPage.thirdTitle}`,
+    desc3: `${TEXTS.SingleBlogPage.desc3}`,
+    desc4: `${TEXTS.SingleBlogPage.desc4}`,
+    desc5: `${TEXTS.SingleBlogPage.desc5}`,
+  },
+  {
+    id: 4,
+    date: `${TEXTS.SingleBlogPage.date}`,
+    firstTitle: `${TEXTS.blogPage.posts.firstTitle}`,
+    desc1: `${TEXTS.SingleBlogPage.desc1}`,
+    heroImage: `${heroImg}`,
+    secondTitle: `${TEXTS.SingleBlogPage.secondTitle}`,
+    desc2: `${TEXTS.SingleBlogPage.desc2}`,
+    postImg: `${postImg3}`,
+    thirdTitle: `${TEXTS.SingleBlogPage.thirdTitle}`,
+    desc3: `${TEXTS.SingleBlogPage.desc3}`,
+    desc4: `${TEXTS.SingleBlogPage.desc4}`,
+    desc5: `${TEXTS.SingleBlogPage.desc5}`,
+  },
+  {
+    id: 5,
+    date: `${TEXTS.SingleBlogPage.date}`,
+    firstTitle: `${TEXTS.SingleBlogPage.firstTitle}`,
+    desc1: `${TEXTS.SingleBlogPage.desc1}`,
+    heroImage: `${heroImg3}`,
+    secondTitle: `${TEXTS.SingleBlogPage.secondTitle}`,
+    desc2: `${TEXTS.SingleBlogPage.desc2}`,
+    postImg: `${postImg}`,
+    thirdTitle: `${TEXTS.SingleBlogPage.thirdTitle}`,
+    desc3: `${TEXTS.SingleBlogPage.desc3}`,
+    desc4: `${TEXTS.SingleBlogPage.desc4}`,
+    desc5: `${TEXTS.SingleBlogPage.desc5}`,
+  },
+  {
+    id: 6,
+    date: `${TEXTS.SingleBlogPage.date}`,
+    firstTitle: `${TEXTS.blogPage.posts.secondTitle}`,
+    desc1: `${TEXTS.SingleBlogPage.desc1}`,
+    heroImage: `${heroImg2}`,
+    secondTitle: `${TEXTS.SingleBlogPage.secondTitle}`,
+    desc2: `${TEXTS.SingleBlogPage.desc2}`,
+    postImg: `${postImg}`,
+    thirdTitle: `${TEXTS.SingleBlogPage.thirdTitle}`,
+    desc3: `${TEXTS.SingleBlogPage.desc3}`,
+    desc4: `${TEXTS.SingleBlogPage.desc4}`,
+    desc5: `${TEXTS.SingleBlogPage.desc5}`,
+  },
+];
+
+export default POST;

@@ -7,7 +7,7 @@ const Navigation = () => {
   return (
     <StyleNavigation>
       <StyleNavigationList>
-        {ROUTES.map((route) => (
+        {ROUTES.filter((route) => route.nav).map((route) => (
           <li key={route.id}>
             <Link to={route.path}>{route.text}</Link>
           </li>

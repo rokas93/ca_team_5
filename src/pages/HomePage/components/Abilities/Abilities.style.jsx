@@ -51,12 +51,17 @@ export const StyledAbilitiesSubHeading = styled.p`
 export const StyledAbilitiesWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: calc(2, auto);
+  grid-template-rows: repeat(4, 132px);
   grid-gap: 8px;
 
   width: 100%;
 
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    grid-template-rows: repeat(2, 232px);
     grid-template-columns: repeat(4, 1fr);
   }
 `;

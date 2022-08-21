@@ -6,8 +6,15 @@ export const StyledLayout = styled.div`
   grid-template-columns: 1fr;
   gap: 46px;
 
+  padding-bottom: 50px;
+
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     grid-template-columns: 278px auto;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding-bottom: 128px;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.xl}) {

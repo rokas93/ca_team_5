@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledButton = styled.button`
-  font-size: 18px;
-  font-weight: 600;
   color: ${({ theme }) => theme.color.white};
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
 
   border: none;
   border-radius: 12px;

@@ -64,11 +64,13 @@ export const StyledServicesExpWrapper = styled.div`
 
   & div:last-of-type {
     padding-left: 0;
+
     align-self: center;
 
     @media screen and (min-width: ${BREAKPOINTS.md}) {
       padding-left: 63px;
-      align-self: initial;
+
+      align-self: self-start;
     }
   }
 `;

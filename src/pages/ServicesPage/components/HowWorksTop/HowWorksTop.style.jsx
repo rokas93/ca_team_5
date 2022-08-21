@@ -3,6 +3,7 @@ import BREAKPOINTS from '../../../../shared/constants/breakpoints';
 
 export const StyledHowWorksTop = styled.div`
   display: flex;
+  align-items: center;
   gap: 32px;
 
   padding: 50px 0;
@@ -22,7 +23,7 @@ export const StyledHowWorksTopLeft = styled.div`
   padding-right: 0;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    width: 50%;
+    width: calc(50% - 16px);
     padding-right: 56px;
   }
 `;
@@ -31,18 +32,28 @@ export const StyledHowWorksTopRight = styled.div`
   display: none;
   gap: 16px;
 
-  align-self: flex-end;
-
   width: 100%;
   height: 100%;
 
-  & img {
-    max-width: calc((100% / 2) - 8px);
-  }
-
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     display: flex;
-    width: 50%;
+    width: calc(50% - 16px);
+  }
+
+  & img {
+    width: 100%;
+
+    @media screen and (min-width: ${BREAKPOINTS.lg}) {
+      max-width: calc((100% / 2) - 8px);
+    }
+  }
+
+  & img:last-of-type {
+    display: none;
+
+    @media screen and (min-width: ${BREAKPOINTS.lg}) {
+      display: block;
+    }
   }
 `;
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyledHomePage } from './HomePage.style';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -10,44 +9,62 @@ import Brands from './components/Brands';
 import Testimonials from './components/Testimonials';
 import Faq from './components/Faq';
 import CallToAction from '../../components/organisms/CallToAction';
+import StyledContainer from '../../assets/styles/StyledContainer';
+import Main from '../../components/atoms/Main';
 
 const HomePage = () => {
   return (
-    <StyledHomePage>
+    <Main>
       <StyledWrapper>
-        <Hero />
+        <StyledContainer>
+          <Hero />
+        </StyledContainer>
       </StyledWrapper>
 
       <StyledWrapper theme={'light'}>
-        <Services />
+        <StyledContainer>
+          <Services />
+        </StyledContainer>
       </StyledWrapper>
 
       <StyledWrapper>
-        <Process />
+        <StyledContainer>
+          <Process />
+        </StyledContainer>
       </StyledWrapper>
 
       <StyledWrapper theme={'lighter'}>
-        <Abilities />
+        <StyledContainer>
+          <Abilities />
+        </StyledContainer>
       </StyledWrapper>
 
       <CallToAction />
 
       <StyledWrapper theme={'lighter'}>
-        <Experience />
+        <StyledContainer>
+          <Experience />
+        </StyledContainer>
       </StyledWrapper>
 
       <StyledWrapper>
-        <Brands />
+        <StyledContainer>
+          <Brands />
+        </StyledContainer>
       </StyledWrapper>
 
       <StyledWrapper theme={'lighter'}>
-        <Testimonials />
+        <StyledContainer>
+          <Testimonials />
+        </StyledContainer>
       </StyledWrapper>
 
       <StyledWrapper theme={'light'}>
-        <Faq />
+        <StyledContainer>
+          <Faq />
+        </StyledContainer>
       </StyledWrapper>
-    </StyledHomePage>
+    </Main>
   );
 };
 

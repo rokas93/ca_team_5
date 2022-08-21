@@ -7,10 +7,13 @@ import {
   StyledQuoteTitle,
   StyledQuoteCardCircleBottom,
 } from './QuoteCard.style';
+import { motion } from 'framer-motion';
 
-const QuoteCard = ({ quote, line, number }) => {
+const CardMotion = motion(StyledQuoteCard);
+
+const QuoteCard = ({ quote, line, number, variants }) => {
   return (
-    <StyledQuoteCard>
+    <CardMotion variants={variants} transition={{ delay: number / 10 }}>
       <StyledQuoteCardCircle>
         <StyledQuoteCardCircleBottom />
         <span>{'0' + number}</span>
@@ -18,7 +21,7 @@ const QuoteCard = ({ quote, line, number }) => {
       {line && <StyledQuoteCardLine></StyledQuoteCardLine>}
       <StyledQuoteTitle>{quote.title}</StyledQuoteTitle>
       <StyledQuoteDesc>{quote.desc}</StyledQuoteDesc>
-    </StyledQuoteCard>
+    </CardMotion>
   );
 };
 

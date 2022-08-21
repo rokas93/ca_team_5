@@ -7,13 +7,16 @@ import Footer from './components/organisms/Footer';
 
 import { ThemeProvider } from 'styled-components';
 import { theme } from './assets/styles/StyledGuide';
+import ScrollToTop from './components/atoms/ScrollToTop';
+import Loader from './components/atoms/Loader/Loader';
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
-        <Suspense>
+        <Suspense fallback={<Loader />}>
           <Routes>
             {ROUTES.map((route) => (
               <Route

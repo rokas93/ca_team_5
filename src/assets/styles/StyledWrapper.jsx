@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const StyledWrapper = styled.section`
+  overflow: hidden;
+
   ${(props) => {
     switch (props.theme) {
       case 'darker':

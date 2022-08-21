@@ -215,6 +215,7 @@ const TEXTS = {
     aboutDesc:
       'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does',
   },
+
   servicesPage: {
     services: {
       title: 'Auto Diagnostics',
@@ -236,6 +237,29 @@ const TEXTS = {
       },
     },
   },
+  blogPage: {
+    ourBlog: {
+      heading: 'Our Blog',
+      label: 'TRENDING',
+      title: 'Diagnose Car Problems If You Don’t Know Much About Cars',
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+      postDate: 'Posted on October 6th 2021',
+    },
+    recaps: {
+      rm: {
+        title: 'Should I Buy a New Car or Lease a New Car in 2021?',
+        desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+      },
+      postTitle1: 'Get an Awesome Number Plate for Your New Car',
+      postTitle2: 'Would you Let a Robot Drive your Car? Our AI Future',
+      postTitle3: 'Will Electric Technology Soon Rule The Road?',
+    },
+    posts: {
+      firstTitle: '5 Genius Car Accessories You Should Never Drive Without',
+      secondTitle: 'We provide blow straight past it with the wheels skidding',
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+    },
+  },
   servicePage: {
     asideText: 'Other services',
     title1:
@@ -250,11 +274,47 @@ const TEXTS = {
     quote:
       'Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante.',
   },
+
+  SingleBlogPage: {
+    date: 'Posted on October 6th 2021',
+    firstTitle: 'Should I Buy a New Car or Lease a New Car in 2021?',
+    desc1:
+      'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical ',
+    secondTitle: 'This is a blog post headline',
+    desc2: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui auctor dictum eget a elit. Pellentesque varius diam risus, ut condimentum lorem volutpat vel. Nam vel orci pharetra eros pulvinar cursus nec quis tellus. Quisque feugiat tortor lectus, pretium interdum justo tincidunt a. Donec at congue lectus. Nulla facilisi. Phasellus consectetur sapien accumsan lectus tincidunt placerat. Etiam ornare nibh vel dui egestas, eu posuere metus convallis.
+
+Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante. Maecenas sodales tristique quam. Suspendisse fringilla massa vel dolor ornare rhoncus. Nullam ut orci mattis leo varius laoreet sed mollis dui. Aenean placerat nec enim ut finibus. Maecenas suscipit nibh eu neque egestas, non condimentum mi bibendum. Sed est eros, molestie consectetur auctor non, lobortis quis tortor. Nam cursus imperdiet massa volutpat hendrerit. Sed suscipit ligula iaculis lorem sagittis tincidunt. Etiam pellentesque metus vel enim iaculis aliquam. Mauris at nisi sed elit gravida malesuada.`,
+    thirdTitle: 'This is a small blog post headline',
+    desc3:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui auctor dictum eget a elit. Pellentesque varius diam risus, ut condimentum lorem volutpat vel. Nam vel orci pharetra eros pulvinar cursus nec quis tellus. Quisque feugiat tortor lectus, pretium interdum justo tincidunt a. Donec at congue lectus. Nulla facilisi. Phasellus consectetur sapien accumsan lectus tincidunt placerat. Etiam ornare nibh vel dui egestas, eu posuere metus convallis.',
+    desc4:
+      'Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante.',
+    desc5:
+      'Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante. Maecenas sodales tristique quam. Suspendisse fringilla massa vel dolor ornare rhoncus. Nullam ut orci mattis leo varius laoreet sed mollis dui. Aenean placerat nec enim ut finibus. Maecenas suscipit nibh eu neque egestas, non condimentum mi bibendum. Sed est eros, molestie consectetur auctor non, lobortis quis tortor. Nam cursus imperdiet massa volutpat hendrerit. Sed suscipit ligula iaculis lorem sagittis tincidunt. Etiam pellentesque metus vel enim iaculis aliquam. Mauris at nisi sed elit gravida malesuada.',
+  },
+  contactPage: {
+    heading: 'Get in touch with our experts',
+    labels: {
+      address: 'Address',
+      details: 'Contact  Details',
+      hours: 'Opening Hours',
+    },
+  },
+  form2: {
+    placeholder: {
+      name: 'Your full Name',
+      email: 'Your Email',
+      service: 'Select service type',
+      message: 'Message',
+    },
+    buttonText: 'Send message',
+  },
   button: {
     contact: 'Contact Us',
     service: 'Book a service',
     quote: 'Get your quote',
     more: 'Learn more',
+    read: 'Read more',
     message: 'Send a message',
   },
 };

@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledArrowButton = styled.div`
+  display: inline-block;
+
   & a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 21px;
 

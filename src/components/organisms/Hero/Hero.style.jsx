@@ -38,6 +38,8 @@ export const StyledDescDiv = styled.div`
 
   z-index: 2;
 
+  width: 100%;
+
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 96px 96px 146px 96px;
   }

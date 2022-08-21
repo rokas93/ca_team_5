@@ -20,7 +20,7 @@ const Sidebar = ({ otherServices }) => {
             key={service.id}
             text={service.text}
             logo={service.logo}
-            id={service.id}
+            slug={service.slug}
           />
         ))}
       </StyledSidebarTop>

@@ -10,7 +10,7 @@ import {
   StyledText,
 } from './Hero.style';
 
-const Hero = ({ image, title, desc }) => {
+const Hero = ({ image, title, desc, path }) => {
   return (
     <StyledHero>
       <StyledHeroDiv>
@@ -20,7 +20,7 @@ const Hero = ({ image, title, desc }) => {
             <h1>{title}</h1>
             <p>{desc}</p>
           </StyledText>
-          <Button bg='primary' text={TEXTS.button.service} />
+          <Button bg='primary' text={TEXTS.button.service} path={'/contact'} />
         </StyledDescDiv>
       </StyledHeroDiv>
     </StyledHero>

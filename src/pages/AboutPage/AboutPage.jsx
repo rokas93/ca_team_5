@@ -2,7 +2,6 @@ import OurTeam from './components/OurTeam';
 import Features from './components/Features';
 import CallToAction from '../../components/organisms/CallToAction';
 
-import { StyledAboutPage } from './AboutPage.style';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Highlights from './components/Highlights';
@@ -12,10 +11,11 @@ import Hero from '../../components/organisms/Hero';
 import heroImage from '../../assets/images/hero-about-img.jpg';
 
 import TEXTS from '../../shared/texts/texts';
+import Main from '../../components/atoms/Main';
 
 const AboutPage = () => {
   return (
-    <StyledAboutPage>
+    <Main>
       <StyledWrapper>
         <StyledContainer>
           <Hero
@@ -44,7 +44,7 @@ const AboutPage = () => {
         </StyledContainer>
       </StyledWrapper>
       <CallToAction />
-    </StyledAboutPage>
+    </Main>
   );
 };
 

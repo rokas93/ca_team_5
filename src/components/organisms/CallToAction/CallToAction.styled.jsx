@@ -13,7 +13,7 @@ export const StyledCallToActionContainer = styled.div`
   align-items: flex-start;
 
   /* CTA container */
-  max-width: 1320px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0;
   /* CTA container */

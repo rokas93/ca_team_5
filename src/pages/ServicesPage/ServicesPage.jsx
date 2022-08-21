@@ -1,5 +1,4 @@
 import React from 'react';
-import { SetyledServicesPage } from './ServicesPage.style';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Services from './components/Services';
 import HowWorksTop from './components/HowWorksTop';
@@ -7,10 +6,11 @@ import StyledContainer from '../../assets/styles/StyledContainer';
 import HowWorksBottom from './components/HowWorksBottom';
 import Header from './components/Header';
 import CallToAction from '../../components/organisms/CallToAction';
+import Main from '../../components/atoms/Main';
 
 const ServicesPage = () => {
   return (
-    <SetyledServicesPage>
+    <Main>
       <StyledWrapper>
         <StyledContainer>
           <Header />
@@ -36,7 +36,7 @@ const ServicesPage = () => {
       </StyledWrapper>
 
       <CallToAction />
-    </SetyledServicesPage>
+    </Main>
   );
 };
 

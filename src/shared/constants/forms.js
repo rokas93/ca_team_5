@@ -27,22 +27,22 @@ export const HOME_PAGE_FORM = [
 export const CONTACT_PAGE_FORM = [
   {
     id: uid(),
-    placeholder: ``,
+    placeholder: `${TEXTS.form2.placeholder.name}`,
     type: 'text',
   },
   {
     id: uid(),
-    placeholder: ``,
+    placeholder: `${TEXTS.form2.placeholder.email}`,
     type: 'text',
   },
   {
     id: uid(),
-    placeholder: ``,
+    placeholder: `${TEXTS.form2.placeholder.service}`,
     type: 'text',
   },
   {
     id: uid(),
-    placeholder: ``,
+    placeholder: `${TEXTS.form2.placeholder.message}`,
     type: 'text',
   },
 ];

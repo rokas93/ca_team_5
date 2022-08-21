@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Manrope', sans-serif;
 }
 
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 a,
 a:link,
 a:visited,

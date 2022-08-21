@@ -6,6 +6,7 @@ export const StyledSidebar = styled.aside``;
 export const StyledSidebarTop = styled.div`
   display: grid;
   grid-template-columns: repeat(2, calc(50% - 7.5px));
+  grid-template-rows: auto repeat(2, 112px);
   gap: 15px;
 
   padding: 16px;
@@ -15,13 +16,10 @@ export const StyledSidebarTop = styled.div`
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     grid-template-columns: auto;
+    grid-template-rows: auto repeat(3, 165px);
     gap: 25px;
 
     padding: 32px;
-  }
-
-  & div {
-    height: 158px;
   }
 
   & div:last-of-type {

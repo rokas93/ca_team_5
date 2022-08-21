@@ -26,7 +26,11 @@ const HowWorksBottom = () => {
         <StyledHowWorksBottomText>
           {TEXTS.servicesPage.howWorks.text}
         </StyledHowWorksBottomText>
-        <Button bg={'primary'} text={TEXTS.servicesPage.howWorks.buttonText} />
+        <Button
+          bg={'primary'}
+          text={TEXTS.servicesPage.howWorks.buttonText}
+          path={'/contact'}
+        />
       </StyledHowWorksBottomRight>
     </StyledHowWorksBottom>
   );
