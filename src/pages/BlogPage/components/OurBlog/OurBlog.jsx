@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../../../../components/atoms/Button';
 import TEXTS from '../../../../shared/texts/texts';
 import image from '../../../../assets/images/blog-hero-img.jpg';
+import { useNavigate } from 'react-router-dom';
 
 import {
   StyledBlog,
@@ -16,6 +17,10 @@ import {
 } from './OurBlog.style';
 
 const OurBlog = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => navigate(`/blog/10`);
+
   return (
     <StyledBlog>
       <StyledLeftDiv>
@@ -33,7 +38,11 @@ const OurBlog = () => {
             <p>{TEXTS.blogPage.ourBlog.desc}</p>
           </StyledText>
           <StyledButtonDiv>
-            <Button text={TEXTS.button.more} bg='primary' />
+            <Button
+              onClick={handleClick}
+              text={TEXTS.button.more}
+              bg='primary'
+            />
             <StyledSpan>{TEXTS.blogPage.ourBlog.postDate}</StyledSpan>
           </StyledButtonDiv>
         </StyledContentContainer>

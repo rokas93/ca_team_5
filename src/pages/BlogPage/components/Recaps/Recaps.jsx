@@ -27,20 +27,23 @@ const Recaps = () => {
           <StyledHeading>{TEXTS.blogPage.recaps.rm.title}</StyledHeading>
           <StyledDesc>{TEXTS.blogPage.recaps.rm.desc}</StyledDesc>
         </StyledText>
-        <ArrowButton path={'/'} text={TEXTS.button.read} />
+        <ArrowButton path={'/blog/10'} text={TEXTS.button.read} />
       </StyledRmDiv>
       <StyledCardsDiv>
         <RecapCard
+          id={7}
           image={rcImage1}
           title={TEXTS.blogPage.recaps.postTitle1}
           date={TEXTS.blogPage.ourBlog.postDate}
         />
         <RecapCard
+          id={8}
           image={rcImage2}
           title={TEXTS.blogPage.recaps.postTitle2}
           date={TEXTS.blogPage.ourBlog.postDate}
         />
         <RecapCard
+          id={9}
           image={rcImage3}
           title={TEXTS.blogPage.recaps.postTitle3}
           date={TEXTS.blogPage.ourBlog.postDate}

@@ -22,7 +22,7 @@ export const StyledTextDiv = styled.div`
   color: ${({ theme }) => theme.color.white};
 
   gap: 32px;
-  padding: 80px 60px;
+  padding: 60px 40px;
 
   h4 {
     ${({ theme }) => theme.h4};
@@ -33,6 +33,13 @@ export const StyledTextDiv = styled.div`
     ${({ theme }) => theme.title2};
 
     opacity: 0.7;
+  }
+
+  transition: 0.3s ease-in;
+  cursor: default;
+
+  &:hover {
+    opacity: 0.9;
   }
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
     padding: 80px 35px;

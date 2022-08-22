@@ -5,14 +5,20 @@ import {
   StyledCardNameTitle,
   StyledCardPositionSpan,
 } from './TeamCard.style';
+import { motion } from 'framer-motion';
+
+const StyledCardBottomDivMotion = motion(StyledCardBottomDiv);
 
 const TeamCard = ({ name, position, image }) => {
   return (
     <StyledCardWrapper image={image}>
-      <StyledCardBottomDiv>
+      <StyledCardBottomDivMotion
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
         <StyledCardNameTitle>{name}</StyledCardNameTitle>
         <StyledCardPositionSpan>{position}</StyledCardPositionSpan>
-      </StyledCardBottomDiv>
+      </StyledCardBottomDivMotion>
     </StyledCardWrapper>
   );
 };

@@ -28,12 +28,6 @@ export const StyledCardBottomDiv = styled.div`
 
   background: ${({ theme }) => theme.color.black};
   padding: 24px 10px;
-
-  transition: 0.3s ease-in;
-
-  &:hover {
-    opacity: 0.9;
-  }
 `;
 
 // Card bottom-div title
