@@ -1,2 +1,2 @@
 **Live prieview**
-[url](https://gs-landing-react.vercel.app/)
+[url](https://ca-team-5.vercel.app/)
